@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Путеводитель по Кабардино-Балкарии</title>
+  <meta name="description" content="Учебный путеводитель: география, люди и три дня по ущельям Кабардино-Балкарии — от Нальчика до Эльбруса.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#start">КБР</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#usloviya">Условия</a>
+      <a href="#lyudi">Люди</a>
+      <a href="#eda">Еда</a>
+      <a href="#marshrut">Маршрут</a>
+      <a href="#quiz">Квиз</a>
+    </nav>
+  </header>
+
+  <main id="start">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Путеводитель</p>
+        <h1>Кабардино-Балкарская республика</h1>
+        <p class="lede">Город у подножия, два ущелья и Эльбрус. Три части одной поездки: где это находится, кто здесь живёт и что успеть за три дня.</p>
+        <p class="quote">Счастье не за горами. Оно в горах.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#marshrut">Смотреть маршрут</a>
+          <a class="btn btn-ghost" href="#usloviya">Сначала про регион</a>
+        </div>
+        <p class="authors">Пяткина Дарья, Провоторова Мария, Торяник Алексей, Дегтярёв Александр, Васильев Юрий, Хопёрская Ольга</p>
+      </div>
+      <figure class="hero-ridge">
+        <img src="img/hero-bench.jpg" alt="Скамейка над зелёными хребтами. На спинке написано: счастье не за горами, оно в горах.">
+      </figure>
+    </section>
+
+    <section class="parts" aria-label="Три части путешествия">
+      <h2>Три части путешествия</h2>
+      <div class="part-grid">
+        <a class="part" href="#usloviya">
+          <span>01</span>
+          <strong>Условия</strong>
+          <em>География · Экономика · Природные ресурсы</em>
+        </a>
+        <a class="part" href="#lyudi">
+          <span>02</span>
+          <strong>Люди</strong>
+          <em>Население · Культура · Религия · Жители</em>
+        </a>
+        <a class="part" href="#marshrut">
+          <span>03</span>
+          <strong>Маршрут</strong>
+          <em>Три дня по ущельям · Еда · Квиз</em>
+        </a>
+      </div>
+    </section>
+
+    <section id="usloviya" class="section">
+      <p class="kicker">Условия</p>
+      <h2>География региона</h2>
+      <div class="split">
+        <div>
+          <p>Кабардино-Балкарская Республика расположена на юге Европейской части России.</p>
+          <p>В центральной части северного склона Большого Кавказа и на прилегающей равнине.</p>
+          <h3>Границы</h3>
+          <ul class="plain">
+            <li><b>Запад.</b> Карачаево-Черкесская Республика.</li>
+            <li><b>Север и северо-восток.</b> Ставропольский край.</li>
+            <li><b>Восток и юго-восток.</b> Республика Северная Осетия — Алания.</li>
+            <li><b>Юг и юго-запад.</b> Грузия.</li>
+          </ul>
+        </div>
+        <div class="profile" id="profile">
+          <p class="profile-title">С севера на юг — вверх</p>
+          <img class="relief" src="img/relief-map.jpg" alt="Физическая карта Кабардино-Балкарии: равнина на севере и хребты на юге.">
+          <svg viewBox="0 0 520 220" class="ridge-chart" role="img" aria-label="Профиль высот от равнины до Эльбруса">
+            <path d="M20 170 C80 168 110 160 150 150 C190 140 210 120 250 108 C290 96 320 78 360 62 C400 46 440 28 500 18 L500 180 L20 180 Z" fill="#d7ebdf"/>
+            <path d="M20 170 C80 168 110 160 150 150 C190 140 210 120 250 108 C290 96 320 78 360 62 C400 46 440 28 500 18" fill="none" stroke="#1f8a4c" stroke-width="3"/>
+            <circle id="nal-dot" cx="168" cy="146" r="6" fill="#1a6dff"/>
+            <text x="150" y="132" font-size="13" fill="#1a2433">Нальчик ≈ 500 м</text>
+            <text x="392" y="16" font-size="13" fill="#1a2433">Эльбрус 5 642 м</text>
+            <text x="24" y="204" font-size="12" fill="#5c6b7a">север: равнина</text>
+            <text x="210" y="204" font-size="12" fill="#5c6b7a">предгорья</text>
+            <text x="390" y="204" font-size="12" fill="#5c6b7a">Главный хребет</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="stats">
+        <article>
+          <strong>12 470 км²</strong>
+          <span>площадь республики на северном склоне Большого Кавказа</span>
+        </article>
+        <article>
+          <strong>5 642 м</strong>
+          <span>Эльбрус — высшая точка России и Европы</span>
+        </article>
+        <article>
+          <strong>4 соседа</strong>
+          <span>Ставрополье, Карачаево-Черкесия, Северная Осетия и Грузия</span>
+        </article>
+        <article>
+          <strong>≈ 500 м</strong>
+          <span>высота Нальчика — столица стоит прямо у подножия гор</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="kicker">Условия</p>
+      <h2>Природные ресурсы</h2>
+      <div class="cards cards-3">
+        <article class="card">
+          <h3>1. Минеральные</h3>
+          <ul>
+            <li>Руды цветных и редких металлов</li>
+            <li>Топливно-энергетическое сырьё</li>
+            <li>Нерудные материалы и сырьё для строительства</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>2. Водные</h3>
+          <ul>
+            <li>Горные реки — потенциал для ГЭС</li>
+            <li>Минеральные воды</li>
+            <li>Подземные воды</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>3. Биологические</h3>
+          <ul>
+            <li>Ценные луга и горные пастбища, леса</li>
+            <li>Горные животные: туры, серны, кабаны</li>
+          </ul>
+        </article>
+      </div>
+      <img class="portrait wide" src="img/horses.jpg" alt="Табун на фоне снежных вершин и горной реки.">
+    </section>
+
+    <section class="section">
+      <p class="kicker">Условия</p>
+      <h2>Сады, курорты, горные реки</h2>
+      <p class="statline"><b>462,5 тыс.</b> рабочая сила, 2025 · +3%. Источник: Росстат.</p>
+      <div class="cards cards-3">
+        <article class="card">
+          <img src="img/apples.jpg" alt="Яблоневый сад.">
+          <h3>Сельское хозяйство</h3>
+          <p>Яблоневые сады, кукуруза на чернозёмах, молочные фермы.</p>
+        </article>
+        <article class="card">
+          <img src="img/ski-night.jpg" alt="Ночной подъёмник на горнолыжном склоне.">
+          <h3>Туризм</h3>
+          <p>Эльбрус и Чегет, курорт Нальчик, новые отели в ОЭЗ «Эльбрус».</p>
+        </article>
+        <article class="card">
+          <img src="img/dam.jpg" alt="Плотина гидроэлектростанции среди лесистых гор.">
+          <h3>Промышленность</h3>
+          <p>ГЭС, соки и минеральная вода, вольфрам и молибден Тырныауза.</p>
+        </article>
+      </div>
+      <div class="band" style="background-image: linear-gradient(rgba(10,24,40,.55), rgba(10,24,40,.55)), url('img/skiers.jpg')">
+        <h3>Туристов всё больше</h3>
+        <div class="stats stats-light">
+          <article>
+            <strong>910 тыс.</strong>
+            <span>туристов за первое полугодие 2025, +14,5%</span>
+          </article>
+          <article>
+            <strong>501 тыс.</strong>
+            <span>из них — в Приэльбрусье</span>
+          </article>
+          <article>
+            <strong>224 дня</strong>
+            <span>рекордный горнолыжный сезон 2025</span>
+          </article>
+          <article>
+            <strong>934 тыс.</strong>
+            <span>первое полугодие 2026, ещё +2,4%</span>
+          </article>
+        </div>
+        <p class="source">Администрация главы КБР; Минкурортов КБР</p>
+      </div>
+    </section>
+
+    <section id="lyudi" class="section">
+      <p class="kicker">Люди</p>
+      <h2>Население</h2>
+      <div class="split">
+        <div>
+          <img class="portrait" src="img/dancers.jpg" alt="Кабардинки в национальных костюмах.">
+          <p class="big-num">905 464</p>
+          <p>жителя на 1 января 2024 года. На слайде о составе указано и <b>908 214</b> тыс. чел.</p>
+          <p class="big-num blue">271 464</p>
+          <p>живут в столице — 30% республики. Каждый третий живёт в Нальчике.</p>
+          <p class="source">Северо-Кавказстат</p>
+        </div>
+        <div>
+          <img class="portrait wide" src="img/nalchik-road.jpg" alt="Дорога к снежным вершинам у въезда в горы.">
+          <p class="bar-label">Город и село</p>
+          <div class="bar" aria-hidden="true">
+            <span style="width:51.7%">Город 51,7%</span>
+            <span class="alt" style="width:48.3%">Село 48,3%</span>
+          </div>
+          <p class="note">Городское население 51,62% — при 75% по стране.</p>
+          <p class="bar-label">Национальный состав</p>
+          <div class="bar nation" aria-label="Кабардинцы 57,5%, русские 22,5%, балкарцы 12,7%, другие 7,3%">
+            <span class="kab" style="width:57.5%"></span>
+            <span class="rus" style="width:22.5%"></span>
+            <span class="bal" style="width:12.7%"></span>
+            <span class="oth" style="width:7.3%"></span>
+          </div>
+          <ul class="legend">
+            <li><i class="kab"></i>Кабардинцы 57,5%</li>
+            <li><i class="rus"></i>Русские 22,5%</li>
+            <li><i class="bal"></i>Балкарцы 12,7%</li>
+            <li><i class="oth"></i>Другие 7,3%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="kicker">Люди</p>
+      <h2>Религия</h2>
+      <div class="cards cards-3">
+        <article class="card"><img src="img/mosque.jpg" alt="Полумесяц над куполом на фоне гор."><h3>Ислам</h3><p class="big-num">55%</p><p>населения</p></article>
+        <article class="card"><h3>Православие</h3><p class="big-num">16%</p></article>
+        <article class="card"><h3>Традиционные верования</h3><p>Третья строка слайда — без доли в процентах.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="kicker">Люди</p>
+      <h2>Адыгэ хабзэ: местный этикет</h2>
+      <div class="cards cards-3">
+        <article class="card">
+          <img src="img/wedding.jpg" alt="Кабардинская свадьба.">
+          <h3>Гостеприимство</h3>
+          <p>Первое слово слайда об этикете — и главная черта, с которой сталкивается гость.</p>
+        </article>
+        <article class="card">
+          <img src="img/atalyk.jpg" alt="Воспитанник аталыка чистит белую лошадь.">
+          <h3>Аталычество</h3>
+          <p>Приём ребёнка в семью на воспитание. По достижении совершеннолетия воспитанник возвращался к родным.</p>
+        </article>
+        <article class="card">
+          <h3>Свадьба</h3>
+          <p>Сватовство, смотрины и обручение, обряд вывода невесты из родного дома и переезд невесты в дом мужа, обряд примирения жениха с родными.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="kicker">Люди</p>
+      <h2>Родом из Кабардино-Балкарии</h2>
+      <div class="people">
+        <article>
+          <img src="img/nogmov.jpg" alt="Портрет Шоры Ногмова.">
+          <h3>Шора Ногмов</h3>
+          <p class="years">1794–1844</p>
+          <p>Просветитель, автор первой кабардинской грамматики</p>
+        </article>
+        <article>
+          <img src="img/shogentsukov.jpg" alt="Портрет Али Шогенцукова.">
+          <h3>Али Шогенцуков</h3>
+          <p class="years">1900–1941</p>
+          <p>Классик кабардинской поэзии</p>
+        </article>
+        <article>
+          <img src="img/kuliev.jpg" alt="Портрет Кайсына Кулиева.">
+          <h3>Кайсын Кулиев</h3>
+          <p class="years">1917–1985</p>
+          <p>Народный поэт Балкарии</p>
+        </article>
+        <article>
+          <img src="img/temirkanov.jpg" alt="Портрет Юрия Темирканова.">
+          <h3>Юрий Темирканов</h3>
+          <p class="years">1938–2023</p>
+          <p>Дирижёр, глава Петербургской филармонии</p>
+        </article>
+        <article>
+          <img src="img/balagov.jpg" alt="Портрет Кантемира Балагова.">
+          <h3>Кантемир Балагов</h3>
+          <p class="years">род. 1991</p>
+          <p>Режиссёр фильма «Теснота» о Нальчике</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="eda" class="section">
+      <p class="kicker">Маршрут</p>
+      <h2>Что обязательно попробовать</h2>
+      <p>Отметьте, что уже в списке. Галочки остаются в этом браузере.</p>
+      <div class="food" id="food"></div>
+    </section>
+
+    <section id="marshrut" class="section">
+      <p class="kicker">Часть третья</p>
+      <h2>Город, два ущелья и Эльбрус — три дня</h2>
+      <p>На обзорном слайде день 2 подписан как Черекское ущелье. В программе дней это Чегем: водопады, лестница и могильники. На карте — остановки из программы.</p>
+      <div class="day-switch" role="tablist" aria-label="Дни маршрута">
+        <button type="button" class="day-btn is-on" data-day="1" role="tab" aria-selected="true">День 1</button>
+        <button type="button" class="day-btn" data-day="2" role="tab" aria-selected="false">День 2</button>
+        <button type="button" class="day-btn" data-day="3" role="tab" aria-selected="false">День 3</button>
+        <button type="button" class="day-btn" data-day="all" role="tab" aria-selected="false">Все точки</button>
+      </div>
+      <div class="map-layout">
+        <div>
+          <img id="day-photo" class="day-photo" alt="">
+          <div class="map-frame">
+            <iframe id="map" title="Маршрут на Яндекс Картах" src="about:blank" loading="lazy"></iframe>
+          </div>
+          <p class="source" id="map-note"></p>
+          <p><a id="map-link" href="#" target="_blank" rel="noopener">Открыть этот день в Яндекс Картах</a></p>
+        </div>
+        <div>
+          <h3 id="day-title">День 1</h3>
+          <p id="day-summary"></p>
+          <ol class="timeline" id="timeline"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section">
+      <p class="kicker">Квиз</p>
+      <h2>Пять вопросов по путеводителю</h2>
+      <form id="quiz-form" class="quiz"></form>
+      <p id="quiz-result" class="quiz-result" aria-live="polite"></p>
+    </section>
+
+    <section class="section conclusion">
+      <p class="kicker">Вывод</p>
+      <div class="split">
+        <div>
+          <h2>Кабардино-Балкария</h2>
+          <p class="lede">Это уникальный регион, где природное богатство гармонично сочетается с культурным наследием и многонациональным составом населения.</p>
+          <img class="portrait" src="img/elbrus.jpg" alt="Эльбрус на рассвете над зелёными холмами.">
+        </div>
+        <img class="papakhas" src="img/papakhas.jpg" alt="Трое в белых папахах смотрят на зелёные горы.">
+      </div>
+    </section>
+
+    <section class="section joke">
+      <img src="img/joke.jpg" alt="Последний слайд презентации">
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
