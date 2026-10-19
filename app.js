@@ -192,7 +192,8 @@ function showDay(key) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "stop";
-    button.innerHTML = `<time>${stop.t}</time><strong>${stop.name}</strong><span> ${stop.text}</span>`;
+    const picture = stop.photo ? `<img src="${stop.photo}" alt="">` : "";
+    button.innerHTML = `${picture}<time>${stop.t}</time><strong>${stop.name}</strong><span> ${stop.text}</span>`;
     button.addEventListener("click", () => {
       timeline.querySelectorAll(".stop").forEach((el) => el.classList.remove("is-on"));
       button.classList.add("is-on");
